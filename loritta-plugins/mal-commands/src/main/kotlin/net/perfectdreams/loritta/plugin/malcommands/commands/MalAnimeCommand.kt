@@ -3,8 +3,8 @@ package net.perfectdreams.loritta.plugin.malcommands.commands
 import mu.KotlinLogging
 import net.dv8tion.jda.api.EmbedBuilder
 import net.perfectdreams.loritta.api.commands.ArgumentType
-import net.perfectdreams.loritta.api.commands.CommandCategory
-import net.perfectdreams.loritta.platform.discord.commands.DiscordAbstractCommandBase
+import net.perfectdreams.loritta.common.commands.CommandCategory
+import net.perfectdreams.loritta.platform.discord.legacy.commands.DiscordAbstractCommandBase
 import net.perfectdreams.loritta.plugin.malcommands.MalCommandsPlugin
 import net.perfectdreams.loritta.plugin.malcommands.models.AnimeStatus
 import net.perfectdreams.loritta.plugin.malcommands.models.AnimeType

@@ -9,13 +9,13 @@ import com.mrpowergamerbr.loritta.utils.extensions.await
 import com.mrpowergamerbr.loritta.utils.lorittaShards
 import com.mrpowergamerbr.loritta.utils.onReactionAddByAuthor
 import com.mrpowergamerbr.loritta.utils.toBufferedImage
-import net.perfectdreams.loritta.api.commands.CommandCategory
+import net.perfectdreams.loritta.common.commands.CommandCategory
 import net.perfectdreams.loritta.api.messages.LorittaReply
 import net.perfectdreams.loritta.api.utils.NoCopyByteArrayOutputStream
 import net.perfectdreams.loritta.api.utils.Rarity
 import net.perfectdreams.loritta.api.utils.image.JVMImage
 import net.perfectdreams.loritta.platform.discord.LorittaDiscord
-import net.perfectdreams.loritta.platform.discord.commands.discordCommand
+import net.perfectdreams.loritta.platform.discord.legacy.commands.discordCommand
 import net.perfectdreams.loritta.tables.Backgrounds
 import net.perfectdreams.loritta.tables.Sets
 import net.perfectdreams.loritta.utils.config.FanArtArtist

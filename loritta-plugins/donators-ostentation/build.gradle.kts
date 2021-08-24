@@ -1,9 +1,9 @@
 dependencies {
-    api(project(":loritta-discord"))
+    api(project(":platforms:discord:legacy"))
 }
 
 plugins {
     java
     kotlin("jvm")
-    `maven-publish`
+    kotlin("plugin.serialization")
 }

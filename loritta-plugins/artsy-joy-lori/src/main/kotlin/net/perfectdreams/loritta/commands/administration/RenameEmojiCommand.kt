@@ -4,8 +4,9 @@ import com.mrpowergamerbr.loritta.utils.Constants
 import net.dv8tion.jda.api.Permission
 import net.perfectdreams.loritta.api.commands.*
 import net.perfectdreams.loritta.api.messages.LorittaReply
+import net.perfectdreams.loritta.common.commands.CommandCategory
 import net.perfectdreams.loritta.platform.discord.LorittaDiscord
-import net.perfectdreams.loritta.platform.discord.commands.DiscordAbstractCommandBase
+import net.perfectdreams.loritta.platform.discord.legacy.commands.DiscordAbstractCommandBase
 import java.util.regex.Pattern
 
 class RenameEmojiCommand(loritta: LorittaDiscord) : DiscordAbstractCommandBase(loritta, listOf("renameemoji", "renomearemoji"), CommandCategory.MODERATION) {
@@ -33,7 +34,6 @@ class RenameEmojiCommand(loritta: LorittaDiscord) : DiscordAbstractCommandBase(l
             val context = this
 
             if (args.isNotEmpty()) {
-
                 // This will verify if have emotes in the message
                 val emote = context.emote(0)
 

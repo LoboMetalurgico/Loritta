@@ -5,7 +5,7 @@ import com.mrpowergamerbr.loritta.dao.Profile
 import com.mrpowergamerbr.loritta.profile.ProfileCreator
 import com.mrpowergamerbr.loritta.profile.ProfileUserInfoData
 import com.mrpowergamerbr.loritta.utils.*
-import net.perfectdreams.loritta.utils.locale.BaseLocale
+import net.perfectdreams.loritta.common.locale.BaseLocale
 import kotlinx.coroutines.runBlocking
 import net.dv8tion.jda.api.entities.Guild
 import net.perfectdreams.loritta.profile.ProfileUtils
@@ -50,7 +50,7 @@ class LorittaChristmas2019ProfileCreator : ProfileCreator("lorittaChristmas2019"
 			marriage?.user1
 		}
 
-		val marriedWith = if (marriedWithId != null) { runBlocking { lorittaShards.retrieveUserInfoById(marriedWithId.toLong()) } } else { null }
+		val marriedWith = if (marriedWithId != null) { lorittaShards.retrieveUserInfoById(marriedWithId.toLong()) } else { null }
 
 		val reputations = ProfileUtils.getReputationCount(user)
 
@@ -185,7 +185,7 @@ class LorittaChristmas2019ProfileCreator : ProfileCreator("lorittaChristmas2019"
 		else
 			userInfo.add("${userProfile.money}")
 
-		val biggestStrWidth = graphics.fontMetrics.stringWidth(userInfo.maxBy { graphics.fontMetrics.stringWidth(it) }!!)
+		val biggestStrWidth = graphics.fontMetrics.stringWidth(userInfo.maxByOrNull { graphics.fontMetrics.stringWidth(it) }!!)
 
 		var y = 515
 		for (line in userInfo) {

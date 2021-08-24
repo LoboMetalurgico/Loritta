@@ -1,9 +1,9 @@
 package net.perfectdreams.loritta.plugin.loriguildstuff.commands
 
 import com.mrpowergamerbr.loritta.utils.Constants
-import net.perfectdreams.loritta.api.commands.CommandCategory
+import net.perfectdreams.loritta.common.commands.CommandCategory
 import net.perfectdreams.loritta.platform.discord.LorittaDiscord
-import net.perfectdreams.loritta.platform.discord.commands.discordCommand
+import net.perfectdreams.loritta.platform.discord.legacy.commands.discordCommand
 
 object ColorCommand {
 

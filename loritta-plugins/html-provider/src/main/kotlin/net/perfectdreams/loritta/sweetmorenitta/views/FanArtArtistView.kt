@@ -1,10 +1,10 @@
 package net.perfectdreams.loritta.sweetmorenitta.views
 
-import net.perfectdreams.loritta.utils.locale.BaseLocale
+import net.perfectdreams.loritta.common.locale.BaseLocale
 import kotlinx.html.DIV
 import kotlinx.html.HEAD
 import kotlinx.html.meta
-import net.perfectdreams.loritta.platform.discord.entities.jda.JDAUser
+import net.perfectdreams.loritta.platform.discord.legacy.entities.jda.JDAUser
 import net.perfectdreams.loritta.utils.config.FanArtArtist
 
 class FanArtArtistView(

@@ -7,15 +7,10 @@ tasks.withType<KotlinCompile> {
 plugins {
     java
     kotlin("jvm")
-    `maven-publish`
-}
-
-repositories {
-    jcenter()
 }
 
 dependencies {
-    api(project(":loritta-api"))
+    api(project(":common-legacy"))
     api(kotlin("stdlib-jdk8"))
     api("org.slf4j:slf4j-api:2.0.0-alpha0")
     api("ch.qos.logback:logback-classic:1.3.0-alpha4")
@@ -34,13 +29,9 @@ dependencies {
     testImplementation("org.assertj:assertj-core:3.12.2")
 }
 
-val sourcesJar by tasks.registering(Jar::class) {
-    archiveClassifier.set("sources")
-    from(sourceSets.main.get().allSource)
-}
-
 tasks {
-    val fatJar = fatJarTask(
+    val fatJar = runnableJarTask(
+        DEFAULT_SHADED_WITHIN_JAR_LIBRARIES,
         configurations.runtimeClasspath.get(),
         jar.get(),
         "net.perfectdreams.loritta.shardcontroller.ShardControllerServerLauncher",

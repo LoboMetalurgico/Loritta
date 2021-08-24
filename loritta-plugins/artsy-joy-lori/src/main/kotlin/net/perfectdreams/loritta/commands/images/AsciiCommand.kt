@@ -2,11 +2,11 @@ package net.perfectdreams.loritta.commands.images
 
 import com.mrpowergamerbr.loritta.utils.toBufferedImage
 import net.perfectdreams.loritta.api.commands.ArgumentType
-import net.perfectdreams.loritta.api.commands.CommandCategory
+import net.perfectdreams.loritta.common.commands.CommandCategory
 import net.perfectdreams.loritta.api.commands.arguments
 import net.perfectdreams.loritta.api.utils.image.JVMImage
 import net.perfectdreams.loritta.platform.discord.LorittaDiscord
-import net.perfectdreams.loritta.platform.discord.commands.DiscordAbstractCommandBase
+import net.perfectdreams.loritta.platform.discord.legacy.commands.DiscordAbstractCommandBase
 import net.perfectdreams.loritta.utils.ImageToAsciiConverter
 
 class AsciiCommand(loritta: LorittaDiscord) : DiscordAbstractCommandBase(loritta, listOf("ascii", "asciiart", "img2ascii", "img2asciiart", "image2ascii"), CommandCategory.IMAGES) {
@@ -34,7 +34,7 @@ class AsciiCommand(loritta: LorittaDiscord) : DiscordAbstractCommandBase(loritta
         executesDiscord {
             val context = this
 
-            val img = context.image(0) as JVMImage
+            val img = context.imageOrFail(0) as JVMImage
             val options = mutableSetOf<ImageToAsciiConverter.AsciiOptions>()
             for (arg in args) {
                 try {

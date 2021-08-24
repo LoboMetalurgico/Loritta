@@ -10,8 +10,8 @@ import com.mrpowergamerbr.loritta.gifs.GifSequenceWriter
 import com.mrpowergamerbr.loritta.utils.LorittaUtils
 import com.mrpowergamerbr.loritta.utils.MiscUtils
 import net.dv8tion.jda.api.EmbedBuilder
-import net.perfectdreams.loritta.api.commands.CommandCategory
-import net.perfectdreams.loritta.platform.discord.commands.DiscordAbstractCommandBase
+import net.perfectdreams.loritta.common.commands.CommandCategory
+import net.perfectdreams.loritta.platform.discord.legacy.commands.DiscordAbstractCommandBase
 import net.perfectdreams.loritta.plugin.fortnite.FortniteStuff
 import net.perfectdreams.loritta.utils.Emotes
 import java.awt.Color

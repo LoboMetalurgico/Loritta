@@ -8,7 +8,7 @@ import kotlinx.coroutines.sync.Mutex
 import mu.KotlinLogging
 import net.dv8tion.jda.api.EmbedBuilder
 import net.perfectdreams.loritta.platform.discord.LorittaDiscord
-import net.perfectdreams.loritta.platform.discord.plugin.LorittaDiscordPlugin
+import net.perfectdreams.loritta.platform.discord.legacy.plugin.LorittaDiscordPlugin
 import net.perfectdreams.loritta.plugin.loribroker.commands.BrokerBuyStockCommand
 import net.perfectdreams.loritta.plugin.loribroker.commands.BrokerCommand
 import net.perfectdreams.loritta.plugin.loribroker.commands.BrokerPortfolioCommand
@@ -31,7 +31,7 @@ class LoriBrokerPlugin(name: String, loritta: LorittaDiscord) : LorittaDiscordPl
 			"AZUL4"  to "Azul",
 			"PETR4"  to "Petrobrás",
 			"MGLU3"  to "Magazine Luiza",
-			"VVAR3"  to "Via Varejo",
+			"VIIA3"  to "Via Varejo",
 			"LAME4"  to "Lojas Americanas",
 			"ITUB4"  to "Itaú Unibanco",
 			"VALE3"  to "Vale S.A.",

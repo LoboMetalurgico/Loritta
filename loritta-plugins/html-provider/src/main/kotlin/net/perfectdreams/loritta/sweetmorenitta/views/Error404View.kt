@@ -1,12 +1,12 @@
 package net.perfectdreams.loritta.sweetmorenitta.views
 
-import net.perfectdreams.loritta.utils.locale.BaseLocale
 import kotlinx.html.DIV
 import kotlinx.html.div
 import kotlinx.html.h1
 import kotlinx.html.img
 import kotlinx.html.p
 import kotlinx.html.style
+import net.perfectdreams.loritta.common.locale.BaseLocale
 
 class Error404View(
     locale: BaseLocale,
@@ -15,7 +15,7 @@ class Error404View(
         locale,
         path
 ) {
-    override fun getTitle() = locale["website.donate.title"]
+    override fun getTitle() = "404"
 
     override fun DIV.generateContent() {
         div(classes = "odd-wrapper") {

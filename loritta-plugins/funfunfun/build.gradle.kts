@@ -12,7 +12,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(kotlin("stdlib-common"))
-                implementation(project(":loritta-api"))
+                implementation(project(":common-legacy"))
             }
         }
 
@@ -20,7 +20,7 @@ kotlin {
         jvm().compilations["main"].defaultSourceSet {
             dependencies {
                 implementation(kotlin("stdlib-jdk8"))
-                implementation(project(":loritta-discord"))
+                implementation(project(":platforms:discord:legacy"))
             }
         }
 
